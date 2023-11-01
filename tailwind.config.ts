@@ -30,6 +30,7 @@ const config: Config = {
     safelist: ['animate-[fade-in_1s_ease-in-out]', 'animate-[slide-in-up_1s_ease-in-out]'],
       
       extend: {
+        
         backgroundImage: {
         'check-icon': "url('/check-icon.png')",
       },

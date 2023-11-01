@@ -19,7 +19,7 @@ const FilterPrices = () => {
 				<form>
 					{prices.map((choice, index) => {
 						return (
-							<div key={index} className="flex justify-between pb-6">
+							<form key={index} className="flex justify-between pb-6">
 								<div className="relative flex">
 									<input type="checkbox" id="price-all" className="peer" />
 									<label
@@ -30,7 +30,7 @@ const FilterPrices = () => {
 									</label>
 								</div>
 								<p className="px-[5px] py-[3px] border border-borderGray text-xs ">{choice.items}</p>
-							</div>
+							</form>
 						);
 					})}
 				</form>

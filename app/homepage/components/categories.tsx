@@ -11,7 +11,7 @@ const Categories = () => {
 	return (
 		<div className="pt-12 pb-4 px-4">
 			<h1 className="relative mb-6 before:absolute before:w-full before:h-0 before:top-1/2 before:left-0 before:border-t before:border-dashGray before:border-dashed before:-z-10 ">
-				<span className="text-2xl md:text-3xl font-bold text-mediumGray bg-paleGray pr-4">CATEGORIES</span>
+				<span className="text-2xl md:text-2xl font-bold text-mediumGray bg-paleGray pr-4">CATEGORIES</span>
 			</h1>
 			<div className="sm:flex sm:flex-wrap">
 				{randomCategory.map((cat, index) => {
@@ -22,8 +22,8 @@ const Categories = () => {
 									<Image alt="Category Name" className="group-hover:scale-125 group-hover:rotate-6 duration-500" src={cat} width={100} height={100} style={{ maxWidth: "100%", height: "auto" }} />
 								</div>
 								<div className="ml-4 md:ml-3">
-									<h2 className="text-mediumGray text-base font-medium mb-2">Category Name</h2>
-									<p className="text-xs text-darkGray">100 Products</p>
+									<h2 className="text-mediumGray text-base font-semibold mb-2">Category Name</h2>
+									<p className="text-xs text-lightGray">100 Products</p>
 								</div>
 							</div>
 						</div>

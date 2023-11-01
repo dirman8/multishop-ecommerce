@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SubHeader = () => {
 	return (
-		<div className="hidden lg:flex h-16 mb-8 bg-mediumGray">
+		<div className="hidden lg:flex h-16 bg-mediumGray">
 			<div className="mx-4 p-8 flex flex-[0_0_25%] items-center justify-between bg-yellow text-alphaGray">
 				<div className="flex place-items-center text-darkGray">
 					<FontAwesomeIcon icon={faBars} style={{ color: "#212529", height: "1rem" }} />

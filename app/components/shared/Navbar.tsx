@@ -22,19 +22,19 @@ const Navbar = () => {
 
 			<div className="py-1 px-4 flex justify-center items-center">
 				<div className="flex py-1 text-sm">
-					<div className="flex items-center mr-2 px-2 py-2 bg-white text-darkGray">
+					<div className="flex items-center mr-2 px-2 py-1 bg-white text-darkGray">
 						My Account
 						<span className="ml-1">
 							<FontAwesomeIcon icon={faCaretDown} style={{ color: "#3D464D", height: "12px" }} />
 						</span>
 					</div>
-					<div className="flex items-center mr-2 px-2 py-2 bg-white text-darkGray">
+					<div className="flex items-center mr-2 px-2 py-1 bg-white text-darkGray">
 						USD
 						<span className="ml-1">
 							<FontAwesomeIcon icon={faCaretDown} style={{ color: "#3D464D", height: "12px" }} />
 						</span>
 					</div>
-					<div className="flex items-center mr-2 px-2 py-2 bg-white text-darkGray">
+					<div className="flex items-center mr-2 px-2 py-1 bg-white text-darkGray">
 						EN
 						<span className="ml-1">
 							<FontAwesomeIcon icon={faCaretDown} style={{ color: "#3D464D", height: "12px" }} />

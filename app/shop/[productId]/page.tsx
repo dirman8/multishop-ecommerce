@@ -1,10 +1,12 @@
-import ShopNav from "../components/shopNav";
-import FilterPrices from "../components/filterPrices";
-import FilterColor from "../components/filterColor";
-import FilterSize from "../components/filterSize";
-import ShopProducts from "../components/shopProducts";
-import Header from "../../homepage/components/header";
+"use client";
+
 import { FC } from "react";
+import ShopNav from "../components/shopNav";
+import Header from "../../homepage/components/header";
+import ProductSlider from "./components/productSlider";
+import ProductDetails from "./components/productDetails";
+import ProductDescription from "./components/productDescription";
+import RelatedProducts from "./components/relatedProducts";
 
 interface pageProps {
 	params: { name: string };
@@ -14,14 +16,14 @@ const page: FC<pageProps> = ({ params }) => {
 	return (
 		<div>
 			<Header />
-			<h1>This is {params.productId}</h1>
-			<div className="px-4">
-				<ShopNav />
-				<FilterPrices />
-				<FilterColor />
-				<FilterSize />
-				<ShopProducts />
+			<ShopNav />
+			<div className="overflow-hidden px-4 pb-12">
+				<ProductSlider />
+				<ProductDetails />
+				<ProductDescription />
 			</div>
+			<RelatedProducts />
+			{/* <h1 className="mt-10 text-paleGray">This is {params.productId}</h1> */}
 		</div>
 	);
 };

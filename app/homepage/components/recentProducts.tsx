@@ -15,8 +15,8 @@ const RecentProducts = () => {
 
 	return (
 		<div className="pt-12 pb-4 px-4">
-			<h1 className="relative mb-6 before:absolute before:w-full before:h-0 before:top-1/2 before:left-0 before:border-t before:border-dashGray before:border-dashed before:-z-10 ">
-				<span className="text-2xl md:text-3xl font-bold mb-6 text-mediumGray bg-paleGray pr-4">RECENT PRODUCTS</span>
+			<h1 className="relative mb-2 before:absolute before:w-full before:h-0 before:top-1/2 before:left-0 before:border-t before:border-dashGray before:border-dashed before:-z-10 ">
+				<span className="text-2xl font-bold mb-6 text-mediumGray bg-paleGray pr-4">RECENT PRODUCTS</span>
 			</h1>
 			<div className="sm:flex sm:flex-wrap">
 				{products.map((product, index) => {
@@ -41,9 +41,9 @@ const RecentProducts = () => {
 									<Image alt="Product" src={product} width={500} height={500} style={{ maxWidth: "100%", height: "auto" }} />
 								</div>
 								<div className="py-6 flex flex-col items-center">
-									<h2 className="text-mediumGray text-base font-medium mb-2">Product Name Goes Here</h2>
-									<h3 className="text-mediumGray text-xl font-medium mb-2 flex justify-center items-center">
-										$123.00 <span className="ml-2 text-lightGray line-through text-base">$124.00</span>
+									<h2 className="text-mediumGray text-base font-semibold mb-2">Product Name Goes Here</h2>
+									<h3 className="text-mediumGray text-lg font-semibold mb-2 flex justify-center items-center">
+										$123.00 <span className="ml-2 text-lightGray line-through text-sm">$124.00</span>
 									</h3>
 									<div className="flex">
 										<FontAwesomeIcon className="mr-1" icon={faStar} style={{ color: "#ffd333", height: "13px" }} />
