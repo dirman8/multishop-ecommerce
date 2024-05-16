@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Categories = () => {
 	const category = [Cat1, Cat2, Cat3];
-	//Create new array with 9 values, which is the values are from category value randomly.
+	//Create new array with 9 values, which is the values are from category value randomly
 	const randomCategory = Array.from({ length: 12 }, () => category[Math.floor(Math.random() * category.length)]);
 
 	return (
@@ -16,10 +16,20 @@ const Categories = () => {
 			<div className="sm:flex sm:flex-wrap">
 				{randomCategory.map((cat, index) => {
 					return (
-						<div key={index} className="flex sm:flex-[0_0_50%] md:flex-[0_0_33.3333%] lg:flex-[0_0_25%] mb-6 sm:mb-0 sm:p-3">
+						<div
+							key={index}
+							className="flex sm:flex-[0_0_50%] md:flex-[0_0_33.3333%] lg:flex-[0_0_25%] mb-6 sm:mb-0 sm:p-3"
+						>
 							<div className="group flex flex-1 pr-1 items-center bg-white hover:bg-yellow">
 								<div className="relative overflow-hidden">
-									<Image alt="Category Name" className="group-hover:scale-125 group-hover:rotate-6 duration-500" src={cat} width={100} height={100} style={{ maxWidth: "100%", height: "auto" }} />
+									<Image
+										alt="Category Name"
+										className="group-hover:scale-125 group-hover:rotate-6 duration-500"
+										src={cat}
+										width={100}
+										height={100}
+										style={{ maxWidth: "100%", height: "auto" }}
+									/>
 								</div>
 								<div className="ml-4 md:ml-3">
 									<h2 className="text-mediumGray text-base font-semibold mb-2">Category Name</h2>
